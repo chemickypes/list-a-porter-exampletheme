@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyThemeActionBar</item>       
+        
+    </style>
+
+    
+
+    <style name="MyThemeActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/background_action_bar</item>
+    </style>
+    
+    <style name="ProgressBar.Example" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_example</item>
+    </style>
+
+   
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="List Element" android:selectable="false" android:enabled="true">
+        <ListPreference android:key="colors" android:dialogTitle="Colors" android:title="Colors" android:summary="Choice Colors of ListItem Name" android:entries="@array/colors" android:entryValues="@array/colors_value" android:defaultValue="1"/>
+        <ListPreference android:key="formatdata" android:dialogTitle="Format Data" android:title="Format Date" android:summary="Choice Format of Date" android:entries="@array/formatdate" android:entryValues="@array/formatdate_value" android:defaultValue="Italian"/>
+        <CheckBoxPreference android:key="showBig" android:title="Show BigDecimal" android:summary="Show or not BigDecimal Value" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Theme">
+        <ListPreference android:entries="@array/themes" android:entryValues="@array/themes_value" android:dialogTitle="Themes" android:key="themes" android:summary="Choice Themes" android:title="Themes" android:defaultValue="0"/>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>
