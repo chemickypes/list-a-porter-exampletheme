@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     
     <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/MyThemeActionBar</item>       
-        
+        <item name="android:dropDownListViewStyle">@style/MyDropDownListView</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:selectableItemBackground">@drawable/ab_background_item</item>
     </style>
 
     
@@ -15,6 +17,14 @@
     <style name="ProgressBar.Example" parent="@android:style/Widget.Holo.Light.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/progress_horizontal_example</item>
     </style>
+    
+    <style name="MyDropDownListView" parent="android:style/Widget.Holo.ListView.DropDown">
+   	 <item name="android:listSelector">@drawable/ad_selectable_background</item>
+	</style>
+	
+    <style name="MyPopupMenu" parent="android:style/Widget.Holo.Light.ListPopupWindow">
+    <item name="android:popupBackground">@drawable/ab_popup_menu</item> 
+</style>
 
    
 </resources>

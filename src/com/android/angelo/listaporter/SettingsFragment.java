@@ -26,7 +26,7 @@ public class SettingsFragment extends PreferenceFragment {
 		addPreferencesFromResource(R.xml.settings_preferences);
 		final ListPreference lpr = (ListPreference) findPreference("colors");
 		final String[] colors = getResources().getStringArray(R.array.colors);
-		lpr.setSummary("Color Name is "+ lpr.getValue());
+		lpr.setSummary("Color Name is "+ colors[Integer.parseInt(lpr.getValue())-1]);
 		Log.d("settings", "firts list");
 		lpr.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 			
@@ -40,7 +40,7 @@ public class SettingsFragment extends PreferenceFragment {
 		
 		final ListPreference lpr2 = (ListPreference) findPreference("formatdata");
 		final String[] format = getResources().getStringArray(R.array.formatdate);
-		lpr2.setSummary(lpr2.getValue()+" format");
+		lpr2.setSummary(format[Integer.parseInt(lpr2.getValue())-1]+" format");
 		Log.d("settings", "second list");
 		lpr2.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 			
